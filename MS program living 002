@@ -1,0 +1,20 @@
+async function createTable() {
+    await Excel.run(async (context) => {
+
+        // TODO1: Queue table creation logic here.
+
+        // TODO2: Queue commands to populate the table with data.
+
+        // TODO3: Queue commands to format the table.
+
+        await context.sync();
+    })
+    .catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+}
+
+Attention this code is from https://docs.microsoft.com/zh-cn/office/dev/add-ins/tutorials/excel-tutorial .
