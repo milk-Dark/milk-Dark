@@ -1,0 +1,17 @@
+async function filterTable() {
+    await Excel.run(async (context) => {
+
+        // TODO1: Queue commands to filter out all expense categories except
+        //        Groceries and Education.
+
+        await context.sync();
+    })
+    .catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+}
+
+Attention, this code is from https://docs.microsoft.com/zh-cn/office/dev/add-ins/tutorials/excel-tutorial, which is just used for studying.
