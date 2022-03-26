@@ -1,0 +1,12 @@
+const currentWorksheet = context.workbook.worksheets.getActiveWorksheet();
+const expensesTable = currentWorksheet.tables.getItem('ExpensesTable');
+const sortFields = [
+    {
+        key: 1,            // Merchant column
+        ascending: false,
+    }
+];
+
+expensesTable.sort.apply(sortFields);
+
+Attention! This code is from https://docs.microsoft.com/zh-cn/office/dev/add-ins/tutorials/excel-tutorial, which is only used for studying.
