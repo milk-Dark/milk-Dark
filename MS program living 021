@@ -1,0 +1,26 @@
+plugins: [
+  new CleanWebpackPlugin(),
+  new HtmlWebpackPlugin({
+    filename: "taskpane.html",
+    template: "./src/taskpane/taskpane.html",
+    chunks: ['polyfill', 'taskpane']
+  }),
+  new CopyWebpackPlugin([
+  {
+    to: "taskpane.css",
+    from: "./src/taskpane/taskpane.css"
+  }
+  ]),
+  new HtmlWebpackPlugin({
+    filename: "commands.html",
+    template: "./src/commands/commands.html",
+    chunks: ["polyfill", "commands"]
+  }),
+  new HtmlWebpackPlugin({
+    filename: "popup.html",
+    template: "./src/dialogs/popup.html",
+    chunks: ["polyfill", "popup"]
+  })
+]
+
+Attention! This code is from https://docs.microsoft.com/zh-cn/office/dev/add-ins/tutorials/excel-tutorial, which is just used for studying.
