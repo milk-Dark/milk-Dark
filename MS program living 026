@@ -1,0 +1,46 @@
+plugins: [
+  new HtmlWebpackPlugin({
+    filename: "taskpane.html",
+    template: "./src/taskpane/taskpane.html",
+    chunks: ["polyfill", "taskpane"],
+  }),
+  new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: "./src/taskpane/taskpane.css",
+        to: "taskpane.css",
+      },
+      {
+        from: "./src/settings/dialog.css",
+        to: "dialog.css",
+      },
+      {
+        from: "assets/*",
+        to: "assets/[name][ext][query]",
+      },
+      {
+        from: "manifest*.xml",
+        to: "[name]." + buildType + "[ext]",
+        transform(content) {
+          if (dev) {
+            return content;
+          } else {
+            return content.toString().replace(new RegExp(urlDev, "g"), urlProd);
+          }
+        },
+      },
+    ],
+  }),
+  new HtmlWebpackPlugin({
+    filename: "commands.html",
+    template: "./src/commands/commands.html",
+    chunks: ["polyfill", "commands"],
+  }),
+  new HtmlWebpackPlugin({
+    filename: "dialog.html",
+    template: "./src/settings/dialog.html",
+    chunks: ["polyfill", "dialog"]
+  })
+]
+
+Attention, this code is from https://docs.microsoft.com/zh-cn/office/dev/add-ins/tutorials/outlook-tutorial which is just used for studying.
