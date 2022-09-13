@@ -1,0 +1,39 @@
+(function () {
+    "use strict";
+
+    let messageBanner;
+
+    Office.onReady(function () {
+        $(document).ready(function () {
+            // Initialize the FabricUI notification mechanism and hide it
+            const element = document.querySelector('.MessageBanner');
+            messageBanner = new components.MessageBanner(element);
+            messageBanner.hideBanner();
+
+            // TODO1: Assign event handler for insert-image button.
+            // TODO4: Assign event handler for insert-text button.
+            // TODO6: Assign event handler for get-slide-metadata button.
+            // TODO8: Assign event handlers for the four navigation buttons.
+        });
+    });
+
+    // TODO2: Define the insertImage function. 
+
+    // TODO3: Define the insertImageFromBase64String function.
+
+    // TODO5: Define the insertText function.
+
+    // TODO7: Define the getSlideMetadata function.
+
+    // TODO9: Define the navigation functions.
+
+    // Helper function for displaying notifications
+    function showNotification(header, content) {
+        $("#notification-header").text(header);
+        $("#notification-body").text(content);
+        messageBanner.showBanner();
+        messageBanner.toggleExpansion();
+    }
+})();
+
+this code is used for studying
