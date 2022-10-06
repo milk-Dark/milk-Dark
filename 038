@@ -1,0 +1,22 @@
+async function insertTextIntoRange() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to insert text into a selected range.
+
+        // TODO2: Load the text of the range and sync so that the
+        //        current range text can be read.
+
+        // TODO3: Queue commands to repeat the text of the original
+        //        range at the end of the document.
+
+        await context.sync();
+    })
+    .catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+}
+
+this is just used for studying
