@@ -1,0 +1,40 @@
+<!-- Message Compose -->
+<ExtensionPoint xsi:type="MessageComposeCommandSurface">
+  <OfficeTab id="TabDefault">
+    <Group id="msgComposeCmdGroup">
+      <Label resid="GroupLabel"/>
+      <Control xsi:type="Button" id="msgComposeInsertGist">
+        <Label resid="TaskpaneButton.Label"/>
+        <Supertip>
+          <Title resid="TaskpaneButton.Title"/>
+          <Description resid="TaskpaneButton.Tooltip"/>
+        </Supertip>
+        <Icon>
+          <bt:Image size="16" resid="Icon.16x16"/>
+          <bt:Image size="32" resid="Icon.32x32"/>
+          <bt:Image size="80" resid="Icon.80x80"/>
+        </Icon>
+        <Action xsi:type="ShowTaskpane">
+          <SourceLocation resid="Taskpane.Url"/>
+        </Action>
+      </Control>
+      <Control xsi:type="Button" id="msgComposeInsertDefaultGist">
+        <Label resid="FunctionButton.Label"/>
+        <Supertip>
+          <Title resid="FunctionButton.Title"/>
+          <Description resid="FunctionButton.Tooltip"/>
+        </Supertip>
+        <Icon>
+          <bt:Image size="16" resid="Icon.16x16"/>
+          <bt:Image size="32" resid="Icon.32x32"/>
+          <bt:Image size="80" resid="Icon.80x80"/>
+        </Icon>
+        <Action xsi:type="ExecuteFunction">
+          <FunctionName>insertDefaultGist</FunctionName>
+        </Action>
+      </Control>
+    </Group>
+  </OfficeTab>
+</ExtensionPoint>
+
+this code is used for studying
