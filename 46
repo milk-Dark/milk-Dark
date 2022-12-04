@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "id": "1",
+      "method": "GET",
+      "url": "..."
+    },
+    {
+      "id": "2",
+      "dependsOn": [ "1" ],
+      "method": "GET",
+      "url": "..."
+    },
+    {
+      "id": "4",
+      "dependsOn": [ "2" ],
+      "method": "GET",
+      "url": "..."
+    },
+    {
+      "id": "3",
+      "dependsOn": [ "4" ],
+      "method": "GET",
+      "url": "..."
+    }
+  ]
+}
+this code is just used for studying
