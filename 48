@@ -1,0 +1,15 @@
+async function replaceText() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to replace the text.
+
+        await context.sync();
+    })
+    .catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+}
+this code is used for studying
