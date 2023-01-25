@@ -1,0 +1,9 @@
+function insertText() {
+    Office.context.document.setSelectedDataAsync('Hello World!',
+        function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                showNotification("Error", asyncResult.error.message);
+            }
+        });
+}
+this code is just used for studying
