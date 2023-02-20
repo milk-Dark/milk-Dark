@@ -1,0 +1,17 @@
+<Control xsi:type="Button" id="ToggleProtection">
+    <Label resid="ProtectionButtonLabel" />
+    <Supertip>
+        <Title resid="ProtectionButtonLabel" />
+        <Description resid="ProtectionButtonToolTip" />
+    </Supertip>
+    <Icon>
+        <bt:Image size="16" resid="Icon.16x16"/>
+        <bt:Image size="32" resid="Icon.32x32"/>
+        <bt:Image size="80" resid="Icon.80x80"/>
+    </Icon>
+    <Action xsi:type="ExecuteFunction">
+       <FunctionName>toggleProtection</FunctionName>
+    </Action>
+</Control>
+
+this code is just used for studying
