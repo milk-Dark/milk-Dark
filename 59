@@ -1,0 +1,8 @@
+const serviceNameRange = context.document.getSelection();
+const serviceNameContentControl = serviceNameRange.insertContentControl();
+serviceNameContentControl.title = "Service Name";
+serviceNameContentControl.tag = "serviceName";
+serviceNameContentControl.appearance = "Tags";
+serviceNameContentControl.color = "blue";
+
+this is just used for studying
