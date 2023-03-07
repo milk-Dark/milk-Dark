@@ -1,0 +1,17 @@
+async function toggleProtection(args) {
+    try {
+        await Excel.run(async (context) => {
+
+            // TODO1: Queue commands to reverse the protection status of the current worksheet.
+
+            await context.sync();
+        });
+    } catch (error) {
+        // Note: In a production add-in, you'd want to notify the user through your add-in's UI.
+        console.error(error);
+    }
+
+    args.completed();
+}
+
+ this code is just used for studying
