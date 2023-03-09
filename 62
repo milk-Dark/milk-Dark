@@ -1,0 +1,8 @@
+const tableData = [
+        ["Name", "ID", "Birth City"],
+        ["Bob", "434", "Chicago"],
+        ["Sue", "719", "Havana"],
+    ];
+secondParagraph.insertTable(3, 3, "After", tableData);
+
+this code is just used for studying
