@@ -1,0 +1,17 @@
+<Control xsi:type="Button" id="<!--TODO1: Unique (in manifest) name for button -->">
+    <Label resid="<!--TODO2: Button label -->" />
+    <Supertip>
+        <Title resid="<!-- TODO3: Button tool tip title -->" />
+        <Description resid="<!-- TODO4: Button tool tip description -->" />
+    </Supertip>
+    <Icon>
+        <bt:Image size="16" resid="Icon.16x16"/>
+        <bt:Image size="32" resid="Icon.32x32"/>
+        <bt:Image size="80" resid="Icon.80x80"/>
+    </Icon>
+    <Action xsi:type="<!-- TODO5: Specify the type of action-->">
+        <!-- TODO6: Identify the function.-->
+    </Action>
+</Control>
+
+this is just used for studying
