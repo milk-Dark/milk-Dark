@@ -1,0 +1,4 @@
+if xa_op == xb_op
+  xc_input=1;
+else 
+  xc_input=0
