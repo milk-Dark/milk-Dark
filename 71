@@ -1,0 +1,6 @@
+function processMessage(arg) {
+    document.getElementById("user-name").innerHTML = arg.message;
+    dialog.close();
+}
+ 
+ a short code 
