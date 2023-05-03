@@ -1,0 +1,10 @@
+originalRange.load("text");
+await context.sync();
+
+// TODO3: Queue commands to insert the original range as a
+//        paragraph at the end of the document.
+
+// TODO4: Make a final call of context.sync here and ensure
+//        that it runs after the insertParagraph has been queued.
+
+this code is just used for studying
