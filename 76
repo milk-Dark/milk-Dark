@@ -1,0 +1,6 @@
+$('#go-to-first-slide').click(goToFirstSlide);
+$('#go-to-next-slide').click(goToNextSlide);
+$('#go-to-previous-slide').click(goToPreviousSlide);
+$('#go-to-last-slide').click(goToLastSlide);
+
+this code is just used for studying
