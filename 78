@@ -1,0 +1,10 @@
+async function createContentControl() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to create a content control.
+
+        await context.sync();
+    });
+}
+
+this cccode is just used for studying
