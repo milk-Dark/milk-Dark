@@ -1,0 +1,9 @@
+async function replaceText() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to replace the text.
+
+        await context.sync();
+    });
+}
+this code is just used for stduying
