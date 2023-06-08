@@ -1,0 +1,9 @@
+async function changeFont() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to apply a different font.
+
+        await context.sync();
+    });
+}
+this code is just used foor studying
