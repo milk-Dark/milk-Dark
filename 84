@@ -1,0 +1,14 @@
+async function insertTextIntoRange() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to insert text into a selected range.
+
+        // TODO2: Load the text of the range and sync so that the
+        //        current range text can be read.
+
+        // TODO3: Queue commands to repeat the text of the original
+        //        range at the end of the document.
+
+        await context.sync();
+    })
+this code is just used for studying ,but not real for studying, maybe for void
