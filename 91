@@ -1,0 +1,38 @@
+function goToFirstSlide() {
+    Office.context.document.goToByIdAsync(Office.Index.First, Office.GoToType.Index,
+        function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showNotification("Error", asyncResult.error.message);
+            }
+        });
+}
+
+function goToLastSlide() {
+    Office.context.document.goToByIdAsync(Office.Index.Last, Office.GoToType.Index,
+        function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showNotification("Error", asyncResult.error.message);
+            }
+        });
+}
+
+function goToPreviousSlide() {
+    Office.context.document.goToByIdAsync(Office.Index.Previous, Office.GoToType.Index,
+        function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showNotification("Error", asyncResult.error.message);
+            }
+        });
+}
+
+function goToNextSlide() {
+    Office.context.document.goToByIdAsync(Office.Index.Next, Office.GoToType.Index,
+        function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showNotification("Error", asyncResult.error.message);
+            }
+        });
+}
+
+ a long code to copy to learn
+
