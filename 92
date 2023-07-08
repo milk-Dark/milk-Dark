@@ -1,0 +1,22 @@
+function main(workbook: ExcelScript.Workbook) {
+  // Add a new worksheet to store our email table
+  let emailsSheet = workbook.addWorksheet("Emails");
+
+  // Add data and create a table
+  emailsSheet.getRange("A1:D1").setValues([
+    ["Date", "Day of the week", "Email address", "Subject"]
+  ]);
+  let newTable = workbook.addTable(emailsSheet.getRange("A1:D2"), true);
+  newTable.setName("EmailTable");
+
+  // Add a new PivotTable to a new worksheet
+  let pivotWorksheet = workbook.addWorksheet("Subjects");
+  let newPivotTable = workbook.addPivotTable("Pivot", "EmailTable", pivotWorksheet.getRange("A3:C20"));
+
+  // Setup the pivot hierarchies
+  newPivotTable.addRowHierarchy(newPivotTable.getHierarchy("Day of the week"));
+  newPivotTable.addRowHierarchy(newPivotTable.getHierarchy("Email address"));
+  newPivotTable.addDataHierarchy(newPivotTable.getHierarchy("Subject"));
+}
+
+the new code need to learn
