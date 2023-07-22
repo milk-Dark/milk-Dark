@@ -1,0 +1,28 @@
+new CopyWebpackPlugin({
+  patterns: [
+  {
+    from: "./src/taskpane/taskpane.css",
+    to: "taskpane.css",
+  },
+  {
+    from: "./src/settings/dialog.css",
+    to: "dialog.css",
+  },
+  {
+    from: "assets/*",
+    to: "assets/[name][ext][query]",
+  },
+  {
+    from: "manifest*.xml",
+    to: "[name]." + buildType + "[ext]",
+    transform(content) {
+      if (dev) {
+        return content;
+      } else {
+        return content.toString().replace(new RegExp(urlDev, "g"), urlProd);
+      }
+    },
+  },
+]}),
+
+this is just a  useless copy one during boring time, i need this to comsume my spare time.
