@@ -1,0 +1,7 @@
+<br /><br />
+<button class="Button Button--primary" id="get-slide-metadata">
+    <span class="Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+    <span class="Button-label">Get Slide Metadata</span>
+    <span class="Button-description">Gets metadata for the selected slide(s).</span>
+</button>
+the last code in july, heart will be more determinal to achieve the goal
