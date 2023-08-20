@@ -1,0 +1,11 @@
+function getSlideMetadata() {
+    Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange,
+        function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                showNotification("Error", asyncResult.error.message);
+            } else {
+                showNotification("Metadata for selected slide(s):", JSON.stringify(asyncResult.value), null, 2);
+            }
+        }
+    );
+}
