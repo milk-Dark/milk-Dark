@@ -1,0 +1,16 @@
+async function changeFont() { 
+    await Word.run(async (context) => {
+
+
+        // TODO1: Queue commands to apply a different font.
+
+
+        await context.sync(); 
+    });
+}
+
+the life in my brain is much more exciting and vivid, surely i do love indulging in the virtual world. 
+
+
+
+
