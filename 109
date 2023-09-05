@@ -1,0 +1,10 @@
+{
+  from: "./src/taskpane/taskpane.css",
+  to: "taskpane.css",
+},
+{
+  from: "./src/settings/dialog.css",
+
+  to: "dialog.css",
+},
+this should be better in mind
