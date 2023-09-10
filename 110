@@ -1,0 +1,14 @@
+async function createChart() {
+    await Excel.run(async (context) => {
+
+        // TODO1: Queue commands to get the range of data to be charted.
+
+        // TODO2: Queue command to create the chart and define its type.
+
+        // TODO3: Queue commands to position and format the chart.
+
+        await context.sync();
+    });
+}
+
+up life and low life are both the useful experience during the life time, hold on my mind and keep on
