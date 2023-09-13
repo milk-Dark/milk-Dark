@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Result xmlns="http://schemas.microsoft.com/contoso/OfficeDefinitions">
+  <SeeMoreURL xmlns="">https://www.bing.com/search?q=example</SeeMoreURL>
+
+
+
+  <Definitions xmlns="">
+    <Definition>Definition1</Definition>
+    <Definition>Definition2</Definition>
+    <Definition>Definition3</Definition>
+  </Definitions>
+ </Result>
+
+ may be a new code i dont know
