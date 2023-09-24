@@ -1,0 +1,9 @@
+async function insertHTML() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to insert a string of HTML.
+
+        await context.sync();
+    });
+}
+this code is just used for study, only for studyinng
