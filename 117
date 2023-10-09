@@ -1,0 +1,5 @@
+We.WebExtensionStoreReference webExtensionStoreReference1 = new We.WebExtensionStoreReference() { Id = "<Your add-in GUID>", Version = "<Your version>", Store = "excatalog", StoreType = "excatalog" };
+We.WebExtensionStoreReference webExtensionStoreReference2 = new We.WebExtensionStoreReference() { Id = "<Your add-in GUID>", Version = "<Your version>", Store = "omex", StoreType = "omex" };            
+
+webExtensionReferenceList1.Append(webExtensionStoreReference2);
+this is a new type, used for studying
