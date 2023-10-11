@@ -1,0 +1,9 @@
+async function insertImage() {
+    await Word.run(async (context) => {
+
+        // TODO1: Queue commands to insert an image.
+
+        await context.sync();
+    });
+}
+this is the worst thing, recover from the mud, hard
