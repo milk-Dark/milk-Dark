@@ -1,0 +1,18 @@
+// Load gists for the user using the GitHub API
+  // and build the list.
+  function loadGists(user, callback) {
+    getUserGists(user, function(gists, error){
+      if (error) {
+        $('.gist-list-container').hide();
+        $('#error-text').text(JSON.stringify(error, null, 2));
+        $('.error-display').show();
+        if (callback) callback(false);
+      } else {
+        $('.error-display').hide();
+        buildGistList($('#gist-list'), gists, onGistSelected);
+        $('.gist-list-container').show();
+        if (callback) callback(true);
+      }
+    });
+  }
+  this code is just used for studying
