@@ -1,0 +1,11 @@
+const doc = context.document;
+        const originalRange = doc.getSelection();
+        originalRange.insertText(" (M365)", Word.InsertLocation.end);
+
+        originalRange.load("text");
+        await context.sync();
+
+        doc.body.insertParagraph("Original range: " + originalRange.text, Word.InsertLocation.end);
+
+        await context.sync();
+      this code is just used for studying
