@@ -1,0 +1,21 @@
+  let emailWorksheet = workbook.getWorksheet("Emails");
+  let table = emailWorksheet.getTable("EmailTable");
+
+  // Get the PivotTable.
+  let pivotTableWorksheet = workbook.getWorksheet("Subjects");
+  let pivotTable = pivotTableWorksheet.getPivotTable("Pivot");
+
+  // Parse the received date string to determine the day of the week.
+  let emailDate = new Date(dateReceived);
+  let dayName = emailDate.toLocaleDateString("en-US", { weekday: 'long' });
+
+  // Remove the reply tag from the email subject to group emails on the same thread.
+  let subjectText = subject.replace("Re: ", "");
+  subjectText = subjectText.replace("RE: ", "");
+
+  // Add the parsed text to the table.
+  table.addRow(-1, [dateReceived, dayName, from, subjectText]);
+
+  // Refresh the PivotTable to include the new row.
+
+give everything to my goal
