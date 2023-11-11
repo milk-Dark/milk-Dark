@@ -1,0 +1,18 @@
+Visio.run(session, function (context) {
+    const page = context.document.getActivePage();
+    const shapes = page.shapes;
+    shapes.load();
+    return context.sync().then(function () {
+        for(let i=0; i<shapes.items.length;i++) {
+            let shape = shapes.items[i];
+            window.console.log("Shape Text: " + shape.text );
+        }
+    });
+}).catch(function(error) {
+    window.console.log("Error: " + error);
+    if (error instanceof OfficeExtension.Error) {
+        window.console.log ("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+});
+
+be careful about three deadly sins, keep your mind in mind
