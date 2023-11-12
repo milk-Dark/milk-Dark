@@ -1,0 +1,10 @@
+function main(workbook: ExcelScript.Workbook) {
+    // Set fill color to FFC000 for range Sheet1!A2:C2
+    let selectedSheet = workbook.getActiveWorksheet();
+    selectedSheet.getRange("A2:C2").getFormat().getFill().setColor("FFC000");
+    selectedSheet.getRange("A3:C3").getFormat().getFill().setColor("yellow");
+    let table = selectedSheet.addTable("A1:C5", true);
+    table.getSort().apply([{ key: 0, ascending: true }]);
+}
+
+it will be harder and harder, and i need to be nicer
