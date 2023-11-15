@@ -1,0 +1,15 @@
+gulp serve
+Build target: DEBUG
+[12:13:24] Using gulpfile d:\pnp\helloworld-webpart\gulpfile.js
+[12:13:24] Starting 'serve'...
+[12:13:24] Starting gulp
+[12:13:24] Starting subtask 'spfx-serve'...
+[12:13:24] [spfx-serve] To load your scripts, use this query string: ?debug=true&noredir=true&debugManifestsFile=https://localhost:4321/temp/manifests.js
+[12:13:25] Starting.
+[12:13:26] Starting subtask 'sass'...
+[12:13:26] Server started https://localhost:4321
+[12:13:26] LiveReload started on port 35729
+[12:13:26] Running server
+[12:13:26] Opening https://sppnp.sharepoint.com/_layouts/workbench.aspx using the default OS app
+
+it will get closer and harder, keep on and hold your mind
