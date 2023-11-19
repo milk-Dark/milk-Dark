@@ -1,0 +1,11 @@
+if (rangeValues[i][3] != 0) {
+        let positiveValue = Math.abs(rangeValues[i][3] as number);
+        selectedSheet.getCell(i, 3).setValue(positiveValue);
+    }
+
+    // The column at index 4 is column "5" in the worksheet.
+    if (rangeValues[i][4] != 0) {
+        let positiveValue = Math.abs(rangeValues[i][4] as number);
+        selectedSheet.getCell(i, 4)
+
+handle the hard fact, cope it
