@@ -1,0 +1,8 @@
+1// Get the value of cell D2.
+let range = selectedSheet.getRange("D2");
+console.log(range.getValues());
+
+just do it
+
+// Format the range to display numerical dollar amounts.
+    selectedSheet.getRange("D2:E8").setNumberFormat("$#,##0.00")
