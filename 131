@@ -1,0 +1,13 @@
+function main(workbook: ExcelScript.Workbook) {
+    // Get the current worksheet.
+    let selectedSheet = workbook.getActiveWorksheet();
+
+    // Format the range to display numerical dollar amounts.
+    selectedSheet.getRange("D2:E8").setNumberFormat("$#,##0.00");
+    
+tell me the trust, wonderful
+
+    // Fit the width of all the used columns to the data.
+    selectedSheet.getUsedRange().getFormat().autofitColumns();
+}
+
