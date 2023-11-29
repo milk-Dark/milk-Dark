@@ -1,0 +1,17 @@
+// Iterate over the fourth and fifth columns and set their values to their absolute value.
+let rowCount = range.getRowCount();
+for (let i = 1; i < rowCount; i++) {
+    // The column at index 3 is column "4" in the worksheet.
+    if (rangeValues[i][3] != 0) {
+        let positiveValue = Math.abs(rangeValues[i][3] as number);
+        selectedSheet.getCell(i, 3).setValue(positiveValue);
+    }
+
+    // The column at index 4 is column "5" in the worksheet.
+    if (rangeValues[i][4] != 0) {
+        let positiveValue = Math.abs(rangeValues[i][4] as number);
+        selectedSheet.getCell(i, 4).setValue(positiveValue);
+    }
+}
+This portion of the script does several i
+new divide new myself
