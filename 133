@@ -1,0 +1,9 @@
+<main id="app-body" class="ms-welcome__main" style="display: none;">
+    <h2 class="ms-font-xl"> Discover what Office Add-ins can do for you today! </h2>
+    <p><label id="item-subject"></label></p>
+    <div role="button" id="run" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
+        <span class="ms-Button-label">Run</span>
+    </div>
+</main>
+
+good good work, good good life
