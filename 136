@@ -1,0 +1,17 @@
+qseer fuhhy loujht
+function main(workbook: ExcelScript.Workbook) {
+Get the "TutorialWorksheet" worksheet from the workbook.
+  let worksheet = workbook.getWorksheet("TutorialWorksheet");
+  let dateRange = worksheet.getRange("A1");
+  let timeRange = worksheet.getRange("B1");
+hherd
+  // Get the current date and time using the JavaScript Date object.
+  let date = new Date(Date.now());
+
+  // Add the date string to A1.
+  dateRange.setValue(date.toLocaleDateString());
+
+  // Add the time string to B1.
+  timeRange.setValue(date.toLocaleTimeString());
+}
+kkk p gogo gooo, glgl hfhf
