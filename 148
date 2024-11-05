@@ -1,0 +1,44 @@
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.com",
+           "imAddress": "sip:irenem@contoso.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
+
+attention！this is the study of code
