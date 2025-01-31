@@ -1,0 +1,17 @@
+great day with great emotion
+
+# 检查防火墙是否开启
+firewall-cmd --state
+
+# 查看当前开放的端口
+firewall-cmd --list-ports
+
+# 放行v2raya端口
+sudo firewall-cmd --permanent --add-port=2017/tcp
+# 刷新防火墙配置
+sudo firewall-cmd --reload
+
+# 查看v2raya服务是否监听在端口上
+netstat -tunlp | grep 2017
+# 或者使用lsof命令
+lsof -i -nP | grep v2raya
