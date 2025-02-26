@@ -1,0 +1,29 @@
+{
+"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value":[
+        {
+            "@odata.type":"#microsoft.graph.user",
+            "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
+            "displayName":"Adele Vance",
+            "createdDateTime":"2019-09-18T09:06:51Z",
+        },
+        {
+            "@odata.type":"#microsoft.graph.group",
+            "id":"c43a7cc9-2d95-44b6-bf6a-6392e41949b4",
+            "displayName":"All Company",
+            "description":null,
+            "createdDateTime":"2019-10-24T01:34:35Z"
+        },
+        {
+            "@odata.type":"#microsoft.graph.device",
+            "id": "d282309e-f91d-43b6-badb-9e68aa4b4fc8",
+            "accountEnabled":null,
+            "deviceId":null,
+            "displayName":null,
+            "operatingSystem":null,
+            "operatingSystemVersion":null
+        }
+    ]
+}
+
+fresh day with fresh motion with my darling girl, and code
