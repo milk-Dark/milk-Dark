@@ -64,7 +64,7 @@
           <mxGeometry height="103.68" width="114.02" x="41.14" y="300" as="geometry" />
         </mxCell>
         <mxCell id="Vm9d0jLZlIxEd_lznEog-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;N2 condition&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="210" y="260" as="geometry" />
+          <mxGeometry height="30" width="60" x="210" y="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
